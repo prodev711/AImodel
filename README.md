@@ -10,11 +10,16 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
 1. If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/) (Node.js version >= 14.6.0 required)
 
 2. Clone this repository
+
+   ```bash
    $ git clone https://github.com/DigitalAgency711/AImodel.git
+   ```
 
 3. Switch to petnamegenerator branch
 
+   ```bash
    $ git checkout petnamegenerator
+   ```
 
 4. Navigate into the project directory
 
