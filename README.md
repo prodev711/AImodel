@@ -10,20 +10,25 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
 1. If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/) (Node.js version >= 14.6.0 required)
 
 2. Clone this repository
+   $ git clone https://github.com/DigitalAgency711/AImodel.git
 
-3. Navigate into the project directory
+3. Switch to petnamegenerator branch
+
+   $ git checkout petnamegenerator
+
+4. Navigate into the project directory
 
    ```bash
-   $ cd openai-quickstart-node
+   $ cd AImodel
    ```
 
-4. Install the requirements
+5. Install the requirements
 
    ```bash
    $ npm install
    ```
 
-5. Make a copy of the example environment variables file
+6. Make a copy of the example environment variables file
 
    On Linux systems: 
    ```bash
@@ -33,9 +38,9 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
    ```powershell
    $ copy .env.example .env
    ```
-6. Add your [API key](https://platform.openai.com/account/api-keys) to the newly created `.env` file
+7. Add your [API key](https://platform.openai.com/account/api-keys) to the newly created `.env` file
 
-7. Run the app
+8. Run the app
 
    ```bash
    $ npm run dev
