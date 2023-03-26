@@ -6,6 +6,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 export default async function (req, res) {
+  console.log(req);
   if (!configuration.apiKey) {
     res.status(500).json({
       error: {
@@ -30,6 +31,16 @@ export default async function (req, res) {
       prompt: generatePrompt(animal),
       temperature: 1,
     });
+    console.log(openai)
+    // const completion = await openai.chatCompletion.create(
+    //   model = 'text-davinci-003',
+    //   messages = [
+    //     {'role':'system','content':'You are a helpful assistant.'},
+    //     {'role':'user','content':'Who won the world series in 2020?'},
+    //     {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
+    //     {'role': 'user','content':'Where was it played?'}
+    //   ]
+    // );
     res.status(200).json({ result: completion.data.choices[0].text });
   } catch(error) {
     // Consider adjusting the error handling logic for your use case
